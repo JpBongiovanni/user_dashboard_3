@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="file:///Users/teacher/Downloads/bootstrap/css/bootstrap-responsive.min.css">
+    <script type="text/javascript" src="file:///Users/teacher/Downloads/bootstrap/js/bootstrap.min.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <h2><a href="">Test App</a> <a href="">Home</a> <a href="">Sign In</a></h2>
+    <h1>Welcome to the Test</h1>
+    <p>We're going to build a cool application using a MVC framework! This application was built with the Village 88 folks!</p>
+    <form action="sign_in" method="POST">
+    {% csrf_token %}
+        <button type="submit" value="Start">Start</button>
+    </form>
+    <div class="home_page_info">
+        <div>
+            <p>Manage Users</p>
+            <p>Using this application, you'll learn how to add, remove, and edit users for the application</p>
+        </div>
+        <div>
+            <p>Leave Messages</p>
+            <p>Users will be able to leave a message to another user using this application</p>
+        </div>
+        <div>
+            <p>Edit User Information</p>
+            <p>Admins will be able to edit another user's information (email address, first name, last name, etc)</p>
+        </div>
+    </div>
+</body>
+</html>
